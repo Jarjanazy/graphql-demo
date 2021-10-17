@@ -16,5 +16,6 @@ public class BankAccountResolver implements GraphQLQueryResolver
                 .id(id)
                 .currency(Currency.DL)
                 .name("abdo").build();
+        // test
     }
 }
