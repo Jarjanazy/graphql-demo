@@ -3,15 +3,11 @@ package jalil.demo.graphqldemo.domain.entity;
 import lombok.Builder;
 import lombok.Value;
 
-import java.util.UUID;
-
 @Value
 @Builder
-public class BankAccount
+public class Client
 {
-    UUID id;
+    String firstName;
 
-    Client client;
-
-    Currency currency;
+    String lastName;
 }

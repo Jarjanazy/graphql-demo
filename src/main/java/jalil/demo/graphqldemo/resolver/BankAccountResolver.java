@@ -11,11 +11,12 @@ import java.util.UUID;
 public class BankAccountResolver implements GraphQLQueryResolver
 {
     public BankAccount bankAccount(UUID id){
+        // here we don't have to specify that we want the client
+        // its resolver will be picked up by spring
         return BankAccount
                 .builder()
                 .id(id)
                 .currency(Currency.DL)
-                .name("abdo").build();
-        // test
+                .build();
     }
 }
