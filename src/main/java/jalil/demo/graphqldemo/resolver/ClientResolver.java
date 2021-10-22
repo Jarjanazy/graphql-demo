@@ -13,8 +13,8 @@ public class ClientResolver implements GraphQLResolver<BankAccount>
     {
         return Client
                 .builder()
-                .firstName("abdo")
-                .lastName("jrjor")
+                .firstName(bankAccount.getClient().getFirstName())
+                .lastName(bankAccount.getClient().getLastName())
                 .build();
     }
 }
