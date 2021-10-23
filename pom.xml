@@ -68,6 +68,18 @@
 			<version>${graphql.version}</version>
 		</dependency>
 
+		<dependency>
+			<groupId>com.graphql-java</groupId>
+			<artifactId>graphql-java-extended-scalars</artifactId>
+			<version>17.0</version>
+			<exclusions>
+				<!-- we exclude it because it's already brought by graphql-spring-boot-starter and we don't want them to clash -->
+				<exclusion>
+					<groupId>com.graphql-java</groupId>
+					<artifactId>graphql-java</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
 
 	</dependencies>
 

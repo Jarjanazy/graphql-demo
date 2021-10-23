@@ -8,4 +8,6 @@ public class CreateBankAccountInput
     String firstName;
 
     String lastName;
+
+    int age;
 }
