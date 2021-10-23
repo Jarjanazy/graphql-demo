@@ -1,6 +1,7 @@
 package jalil.demo.graphqldemo.mutation;
 
 import graphql.kickstart.tools.GraphQLMutationResolver;
+import graphql.schema.DataFetchingEnvironment;
 import jalil.demo.graphqldemo.api.dto.CreateBankAccountInput;
 import jalil.demo.graphqldemo.domain.entity.BankAccount;
 import jalil.demo.graphqldemo.domain.entity.Client;
@@ -13,7 +14,7 @@ import java.util.UUID;
 public class BankAccountMutation implements GraphQLMutationResolver
 {
 
-    BankAccount createBankAccount(CreateBankAccountInput input)
+    BankAccount createBankAccount(CreateBankAccountInput input, DataFetchingEnvironment environment)
     {
         Client client = Client.builder().firstName(input.getFirstName()).lastName(input.getLastName()).build();
 
