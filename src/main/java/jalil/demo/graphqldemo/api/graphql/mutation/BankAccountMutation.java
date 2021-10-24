@@ -5,10 +5,9 @@ import graphql.schema.DataFetchingEnvironment;
 import jalil.demo.graphqldemo.api.graphql.dto.CreateBankAccountInput;
 import jalil.demo.graphqldemo.domain.entity.BankAccount;
 import jalil.demo.graphqldemo.domain.entity.Client;
-import jalil.demo.graphqldemo.domain.entity.Currency;
+import jalil.demo.graphqldemo.domain.enums.Currency;
 import org.springframework.stereotype.Component;
 
-import java.util.UUID;
 
 @Component
 public class BankAccountMutation implements GraphQLMutationResolver
@@ -18,6 +17,6 @@ public class BankAccountMutation implements GraphQLMutationResolver
     {
         Client client = Client.builder().firstName(input.getFirstName()).lastName(input.getLastName()).build();
 
-        return BankAccount.builder().id(UUID.randomUUID()).client(client).currency(Currency.DL).build();
+        return BankAccount.builder().client(client).currency(Currency.DL).build();
     }
 }

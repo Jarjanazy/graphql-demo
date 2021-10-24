@@ -1,16 +1,24 @@
 package jalil.demo.graphqldemo.domain.entity;
 
+import jalil.demo.graphqldemo.domain.enums.Currency;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Value;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import javax.persistence.*;
 
-import java.util.UUID;
-
-@Value
 @Builder
+@Entity
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
 public class BankAccount
 {
-    UUID id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    Integer id;
 
+    @OneToOne
     Client client;
 
     Currency currency;

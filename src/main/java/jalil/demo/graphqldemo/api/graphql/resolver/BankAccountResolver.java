@@ -4,7 +4,7 @@ import graphql.execution.DataFetcherResult;
 import graphql.kickstart.execution.error.GenericGraphQLError;
 import graphql.kickstart.tools.GraphQLQueryResolver;
 import jalil.demo.graphqldemo.domain.entity.BankAccount;
-import jalil.demo.graphqldemo.domain.entity.Currency;
+import jalil.demo.graphqldemo.domain.enums.Currency;
 import org.springframework.stereotype.Component;
 import java.util.UUID;
 
@@ -12,7 +12,7 @@ import java.util.UUID;
 @Component
 public class BankAccountResolver implements GraphQLQueryResolver
 {
-    public DataFetcherResult<BankAccount> bankAccount(UUID id){
+    public DataFetcherResult<BankAccount> bankAccount(Integer id){
         // here we don't have to specify that we want the client
         // its resolver will be picked up by spring
         return DataFetcherResult.<BankAccount>newResult()
