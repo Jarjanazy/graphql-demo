@@ -18,7 +18,7 @@ public class BankAccount
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     Integer id;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.PERSIST)
     Client client;
 
     Currency currency;
