@@ -1,4 +1,4 @@
-package jalil.demo.graphqldemo.resolver;
+package jalil.demo.graphqldemo.api.graphql.resolver;
 
 import graphql.kickstart.tools.GraphQLResolver;
 import jalil.demo.graphqldemo.domain.entity.BankAccount;

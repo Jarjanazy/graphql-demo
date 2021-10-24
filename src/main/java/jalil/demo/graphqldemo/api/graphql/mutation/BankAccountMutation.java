@@ -1,8 +1,8 @@
-package jalil.demo.graphqldemo.mutation;
+package jalil.demo.graphqldemo.api.graphql.mutation;
 
 import graphql.kickstart.tools.GraphQLMutationResolver;
 import graphql.schema.DataFetchingEnvironment;
-import jalil.demo.graphqldemo.api.dto.CreateBankAccountInput;
+import jalil.demo.graphqldemo.api.graphql.dto.CreateBankAccountInput;
 import jalil.demo.graphqldemo.domain.entity.BankAccount;
 import jalil.demo.graphqldemo.domain.entity.Client;
 import jalil.demo.graphqldemo.domain.entity.Currency;

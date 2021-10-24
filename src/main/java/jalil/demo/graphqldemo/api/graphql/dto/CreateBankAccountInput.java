@@ -1,4 +1,4 @@
-package jalil.demo.graphqldemo.api.dto;
+package jalil.demo.graphqldemo.api.graphql.dto;
 
 import lombok.Data;
 

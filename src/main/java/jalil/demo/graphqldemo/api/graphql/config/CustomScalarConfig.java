@@ -1,4 +1,4 @@
-package jalil.demo.graphqldemo.api.config;
+package jalil.demo.graphqldemo.api.graphql.config;
 
 import graphql.scalars.ExtendedScalars;
 import graphql.schema.GraphQLScalarType;

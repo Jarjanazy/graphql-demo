@@ -1,7 +1,5 @@
-package jalil.demo.graphqldemo.resolver;
+package jalil.demo.graphqldemo.api.graphql.resolver;
 
-import graphql.GraphQLError;
-import graphql.GraphQLException;
 import graphql.execution.DataFetcherResult;
 import graphql.kickstart.execution.error.GenericGraphQLError;
 import graphql.kickstart.tools.GraphQLQueryResolver;
